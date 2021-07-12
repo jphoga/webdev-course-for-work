@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- hover over browser bar -->
+  <title>My first html-page</title>
+
+  <!-- for SEO purposes -->
+  <meta name="description" content="This is my first html-page.">
+  <meta name="author" content="Jan">
+
+  <!-- for sharing on social media -->
+  <meta property="og:title" content="My first html-page">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="This is my first html-page.">
+  <meta property="og:image" content="image.png">
+
+  <!-- favicon -->
+  <link rel="icon" href="favicon_io/favicon.ico">
+
+  <!-- stylesheets  -->
+  <link rel="stylesheet" href="./myfirst.css">
+</head>
+
+<body>
+
+  <div id="container">
+    <header class="headline-container">
+      <h1>Hi! Welcome to this awesome web page.</h1>
+      <p>(Try hover over the picture)</p>
+    </header>
+    <main class="cards-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="image" src="https://www.fillmurray.com/g/300/300" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="back-inner-text">Bill Murray</h1>
+            <p>Actor</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+    </main> 
+    <aside>
+        <button class="button" onclick="addCard()">Add Card</button>
+        <button class="button" onclick="deleteCard()">Delete Card</button>
+    </aside>
+    <footer>
+      <p>Web page made with love by Jan</p>
+    </footer>
+  </div>
+
+  <!-- js scripts -->
+  <script src="./myfirst.js"></script>
+</body>
+</html>
